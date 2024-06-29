@@ -1,69 +1,68 @@
-![icon_logo](https://user-images.githubusercontent.com/56977388/178157849-38d2f2c3-1c93-4dac-9577-57f3a752e2cd.png)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; max-width: 800px; padding: 20px; background-color: #f5f5f5; border: 1px solid #ccc; border-radius: 8px;">
 
+<h1 style="color: #333;">Flight Booking System</h1>
+<p style="margin-bottom: 20px;">This project is a web-based flight booking system developed using HTML, CSS, JavaScript, and Django. It provides functionalities for users to search, book, and manage flight reservations.</p>
 
+<h2 style="color: #333;">Table of Contents</h2>
+<ul style="list-style-type: none; padding: 0;">
+    <li style="margin-bottom: 10px;"><a href="#introduction">Introduction</a></li>
+    <li style="margin-bottom: 10px;"><a href="#technologies">Technologies Used</a></li>
+    <li style="margin-bottom: 10px;"><a href="#installation">Installation</a></li>
+    <li style="margin-bottom: 10px;"><a href="#usage">Usage</a></li>
+    <li style="margin-bottom: 10px;"><a href="#features">Features</a></li>
+    <li style="margin-bottom: 10px;"><a href="#contributing">Contributing</a></li>
+    <li style="margin-bottom: 10px;"><a href="#license">License</a></li>
+</ul>
 
-A flight booking Django application written in Python, HTML, CSS & Javascript.
-This is the capstone project for CS50's Web Programming with Python and Javascript.
+<h2 id="introduction" style="color: #333;">Introduction</h2>
+<p>This Flight Booking System allows users to book flights, view flight details, and manage their bookings. It provides a user-friendly interface for both customers and administrators.</p>
 
-#### Project Video: [Watch on Youtube](https://www.youtube.com/watch?v=3tD4OsuGmoo)
+<h2 id="technologies" style="color: #333;">Technologies Used</h2>
+<ul>
+    <li>Frontend: HTML, CSS, JavaScript</li>
+    <li>Backend: Django, SQLite (or any other database supported by Django)</li>
+    <li>Others: Bootstrap (for styling), jQuery (for enhanced JavaScript functionalities)</li>
+</ul>
 
+<h2 id="installation" style="color: #333;">Installation</h2>
+<p>To run this project locally:</p>
+<pre style="background-color: #f0f0f0; padding: 10px; border-radius: 4px;">
+git clone https://github.com/yourusername/flight-booking-system.git
+cd flight-booking-system
+python3 -m venv venv
+source venv/bin/activate  <!-- On Windows use venv\Scripts\activate -->
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+</pre>
 
-<img alt="flight" src="https://user-images.githubusercontent.com/56977388/178156598-69491e88-bd9a-42dc-88f3-afeb02d7161e.png">
+<h2 id="usage" style="color: #333;">Usage</h2>
+<p>Navigate to <code>http://127.0.0.1:8000/</code> in your web browser. Create an account or log in with your credentials. Use the search functionality to find flights, book a flight, and manage your bookings.</p>
 
+<h2 id="features" style="color: #333;">Features</h2>
+<ul>
+    <li>User registration and authentication</li>
+    <li>Search for flights based on criteria</li>
+    <li>Book flights and receive confirmation</li>
+    <li>View and manage flight bookings</li>
+    <li>Admin panel for managing flights and users</li>
+</ul>
 
-### Features
-1. Users can create their user account.
-2. Users can book both one-way as well as round-trip tickets.
-3. Webpages are mobile responsive.
-4. Users can cancel their booked tickets.
-5. Users can view their previously booked tickets (Both confirmed and cancelled tickets).
-6. Tickets are downloadable as pdf document.
-7. As-you-type Search
+<h2 id="contributing" style="color: #333;">Contributing</h2>
+<p>Contributions are welcome! Please follow the GitHub flow:</p>
+<pre style="background-color: #f0f0f0; padding: 10px; border-radius: 4px;">
+git checkout -b feature/new-feature
+git commit -am 'Add new feature'
+git push origin feature/new-feature
+</pre>
 
-### Files & Directories
-  - `capstone` - project directory.
-    - `utils.py` - Contains all Django helper functions used in views.py.
-    - `urls.py` - This file handles all the URLs of the project.
-  - `flight` - main application directory.
-    - `static` - contains all static content.
-        - `css` - Contains all css files for styling the webpages.
-        - `js` - Contains all javascript files used in the application.
-        - `img` - Contains all image files used in the application.
-    - `templates/flight` Contains all application templates.
-        - `book.html` - Template for showing selected flight and reading Travellers data.
-        - `bookings.html` - Template for showing bookings done by a user.
-        - `index.html` - Home page template.
-        - `layout.html` - Base template for all pages except login & register page.
-        - `layout2.html` - Base template for login & register page.
-        - `login.html` - Login user page.
-        - `payment_process.html` - Page after completion of payment.
-        - `payment.html` - Payment page.
-        - `register.html` - Register user page.
-        - `search.html` - Flight search result page.
-        - `ticket.html` - Template for printing ticket(pdf).
-    - `admin.py` - Contains some models for access to the Django administrator.
-    - `models.py` - All models used in the application are created here.
-    - `urls.py` - This file handles all the URLs of the web application.
-    - `views.py` - This file contains all the application views.
-    - `constant.py` - This file contains the fee amount which is charged to the user for booking flight tickets.
-  - `requirements.txt` - This file contains all contains all the python packages that needs to be installed to run this web application.
-  - `manage.py` - This file is used basically as a command-line utility and for deploying, debugging, or running our web application.
+<h2 id="license" style="color: #333;">License</h2>
+<p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more details.</p>
 
-### Justification
-
-1. Mobile responsive webpages.
-2. More complex models.
-3. More interatactive because webpages use ajax functionality (eg., fetch) written in javascript.
-4. Converts html template to downloadable pdf.
-
-### Installation
-
-- Install Python3.9 from [here](https://www.python.org/downloads/) manually.
-- Install project dependencies by running `py -m pip install -r requirements.txt`.
-- Run the commands `py manage.py makemigrations` and `py manage.py migrate` in the project directory to make and apply migrations.
-- Create superuser with `py manage.py createsuperuser`. This step is optional.
-- Run the command `py manage.py runserver` to run the web server.
-- Open web browser and goto `127.0.0.1:8000` url to start using the web application.
-
-
-Project video [https://youtu.be/3tD4OsuGmoo](https://youtu.be/3tD4OsuGmoo)
+</body>
+</html>
