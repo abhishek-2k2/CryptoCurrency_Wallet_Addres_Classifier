@@ -61,8 +61,7 @@ git commit -am 'Add new feature'
 git push origin feature/new-feature
 </pre>
 
-<h2 id="license" style="color: #333;">License</h2>
-<p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more details.</p>
+
 
 </body>
 </html>
