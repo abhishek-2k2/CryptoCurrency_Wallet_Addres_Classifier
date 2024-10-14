@@ -46,6 +46,4 @@ This project involves the development of a machine learning model to classify cr
 
 This project demonstrates the application of deep learning for the classification of cryptocurrency wallet addresses. By leveraging a pre-trained model and a user-friendly Streamlit interface, users can easily predict the type of cryptocurrency associated with a given wallet address. The project also emphasizes robust error handling to enhance reliability and user experience. The use of a synthetic dataset with data augmentation, feature extraction, and comparison of different ML models highlights the comprehensive approach taken to develop an effective classification solution.
 
-## Live Demo
 
-You can access the deployed Streamlit app here: [Cryptocurrency Wallet Address Classifier](https://crypto-address-classification-4istoklfwtywwiuyzeqyu2.streamlit.app)
