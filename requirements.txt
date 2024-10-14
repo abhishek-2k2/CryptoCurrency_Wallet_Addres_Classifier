@@ -2,5 +2,4 @@ streamlit
 numpy
 pandas
 scikit-learn
-tensorflow==2.14
-keras==2.14
+tensorflow>=2.16,<2.18
